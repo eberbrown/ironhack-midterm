@@ -1,0 +1,63 @@
+/* Colors:
+#072AC8
+#43D2FF
+#A2D6F9
+#D1EDFF
+#292E47
+#6B708D
+#F2F4FC
+#ECF7FF
+#FFC600
+*/
+
+* {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.body-intro-text-m {
+    font-size: 2.4rem;
+    font-weight: medium;
+}
+
+.body-intro-text-r {
+    font-size: 2rem;
+}
+
+.headline-text-m {
+    font-size: 1.7rem;
+    font-weight: medium;
+}
+
+.headline-text-r {
+    font-size: 1.7rem;
+}
+
+.caption-one-text {
+    font-size: 1.5rem;
+}
+
+.caption-two-text {
+    font-size: 1.3rem;
+}
