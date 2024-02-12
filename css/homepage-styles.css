@@ -1,0 +1,111 @@
+/*  -------------------------------- NAVBAR ----------------------------->>>>> */
+.nav-container {
+    /* border: 1px solid red; */
+    width: 1440px;
+    height: 122px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav-components {
+    width: 1099.36px;
+    height: 52px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 60.53px;
+}
+
+.nav-bar-links {
+    width: 295px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #6B708D;
+}
+
+.nav-bar-links li:first-of-type a {
+    color: #072AC8;
+}
+
+.contact-us-btn {
+    width: 150px;
+    padding: 10px;
+    background-color: #072AC8;
+    border: none;
+    color: white;
+}
+
+/*  ------------------------------- HERO SECTION ------------------------->>>>> */
+
+.hero-section {
+    margin-top: 100px;
+}
+
+.hero-section-container {
+    /* border: 1px solid blue; */
+    width: 1100px;
+    height: 650px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-section-content p {
+    width: 435px;
+    color: #6B708D;
+    margin-top: 30px;
+}
+
+.get-in-touch-btn {
+    width: 150px;
+    padding: 10px;
+    background-color: #072AC8;
+    border: none;
+    color: white;
+    margin-top: 40px;
+}
+
+.see-our-work-btn {
+    border: none;
+    color: #6B708D;
+    margin-left: 40px;
+}
+
+.hero-section-image-container {
+    /* border: 1px solid violet; */
+    width: 570px;
+    height: 650px;
+    position: relative;
+}
+
+.hero-section-hero-image {
+    width: 570px;
+    height: 650px;
+}
+
+.hero-section-card-one {
+    width: 190px;
+    height: 216px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-section-card-two {
+    width: 190px;
+    height: 193px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
