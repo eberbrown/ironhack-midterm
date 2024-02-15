@@ -3,11 +3,13 @@
   /* border: 1px solid red; */
   width: 1440px;
   height: 122px;
+  margin: 0 auto;
   display: flex;
   align-items: flex-end;
 }
 
 .nav-components {
+  /* border: 1px solid green; */
   width: 1099.36px;
   height: 52px;
   margin: 0 auto;
@@ -47,7 +49,9 @@
 /*  ------------------------------- HERO SECTION ------------------------->>>>> */
 
 .hero-section {
+  margin: 0 auto;
   margin-top: 100px;
+  /* border: 1px solid blue; */
 }
 
 .hero-section-container {
@@ -68,6 +72,7 @@
   width: 435px;
   color: #6b708d;
   margin-top: 30px;
+  margin-left: 0;
 }
 
 .get-in-touch-btn {
@@ -158,6 +163,7 @@
 
 .projects-section-container {
   width: 1100px;
+  /* border: 1px solid red; */
   /* height: 96px; */
   margin: 0 auto;
 }
@@ -166,6 +172,7 @@
   /* border: 1px solid green; */
   width: 265px;
   color: #292e47;
+  margin-left: 0;
 }
 
 .project-cards-list {
@@ -446,53 +453,373 @@
   margin-left: 20px;
 }
 
-
-/*  ------------------------------- CTA SECTION ------------------------->>>>> */
+/*  ------------------------------- FOOTER SECTION ------------------------->>>>> */
 
 .footer-section {
-    /* border: 1px solid magenta; */
-    margin-top: 170px;
-    padding-bottom: 100px;
+  /* border: 1px solid magenta; */
+  margin-top: 170px;
+  padding-bottom: 100px;
 }
 
 .footer-container {
-    /* border: 1px solid red; */
-    width: 1100px;
-    height: 112px;
-    margin: 0 auto;
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  /* border: 1px solid red; */
+  width: 1100px;
+  height: 112px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer-circle-info p {
-   /*  border: 1px solid green; */
-    width: 260px;
-    color: #6B708D;
-    margin-top: 30px;
+  /*  border: 1px solid green; */
+  width: 260px;
+  color: #6b708d;
+  margin-top: 30px;
 }
 
 .footer-links-list {
-    /* border: 1px solid green; */
-    list-style: none;
-    width: 435px;
-    height: 112px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 106px;
-    row-gap: 60px;
+  /* border: 1px solid green; */
+  list-style: none;
+  width: 435px;
+  height: 112px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 106px;
+  row-gap: 60px;
 }
 
 .row-one-links {
-    align-self: start;
+  align-self: start;
 }
 
 .row-two-links {
-    align-self: end;
+  align-self: end;
 }
 
 .footer-links-list li a {
-    text-decoration: none;
-    color: #6B708D;
+  text-decoration: none;
+  color: #6b708d;
+}
+
+/*  ------------------------------- MEDIA QUERIES ------------------------->>>>> */
+/*  ------------------------------- MEDIA QUERIES ------------------------->>>>> */
+/*  ------------------------------- MEDIA QUERIES ------------------------->>>>> */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  main {
+    width: 100vw;
+}
+  /*  -------------------------------- NAVBAR ----------------------------->>>>> */
+.nav-container {
+  /* border: 1px solid red; */
+  width: 100vw;
+  height: 100px;
+  display: flex;
+}
+
+.nav-components {
+  width: 100vw;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.nav-bar-links {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+}
+
+.contact-us-btn {
+  display: none;
+}
+
+/*  ------------------------------- HERO SECTION ------------------------->>>>> */
+
+.hero-section {
+  margin-top: 40px;
+  /* border: 1px solid blue; */
+  width: 100vw;
+}
+
+.hero-section-container {
+  /* border: 1px solid blue; */
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+.hero-section-content h1 {
+  font-size: 3.8rem;
+  margin-top: 30px;
+}
+
+.hero-section-content p {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 325px;
+}
+
+.get-in-touch-btn {
+}
+
+.see-our-work-btn {
+}
+
+.hero-section-hero-image {
+  width: 325px;
+  height: 370px;
+}
+
+.hero-section-image-container {
+  /* border: 1px solid violet; */
+  width: 325px;
+  height: 370px;
+}
+
+.hero-section-card-one {
+  display: none;
+}
+
+.hero-section-card-two {
+  display: none;
+
+}
+
+/*  ------------------------------- CLIENT SECTION ------------------------->>>>> */
+
+.client-section {
+  margin-top: 80px;
+  /* border: 1px solid red; */
+}
+
+.clients-container {
+  /* border: 1px solid green; */
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+.clients-section-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
+  row-gap: 30px;
+  margin: 0 40px;
+}
+
+.clients-section-list {
+  height: auto;
+}
+
+.client-logo {
+  width: 110px;
+}
+
+.client-logo-amazon {
+  display: none;
+}
+
+/*  ------------------------------- PROJECTS SECTION ------------------------->>>>> */
+
+.projects-section {
+  /* border: 1px solid red; */
+  margin-top: 80px;
+}
+
+.projects-section-container {
+  width: 100vw;
+  /* border: 1px solid red; */
+  /* height: 96px; */
+  margin: 0 auto;
+}
+
+.projects-section-container h3 {
+  /* border: 1px solid green; */
+  width: auto;
+  font-size: 3.3rem;
+  text-align: center;
+}
+
+.project-cards-list {
+  /*  border: 1px solid green; */
+  flex-direction: column;
+  margin-top: 0px;
+}
+
+.project-card {
+  margin-top: 30px;
+}
+
+/*  ------------------------------- TESTIMONIAL SECTION ------------------------->>>>> */
+
+.testimonial-section {
+  margin-top: 80px;
+}
+
+.testimonial-section-container {
+  width: 100vw;
+  height: auto;
+  padding: 55px 0;
+}
+
+.testimonial-section-memojis-container {
+  /* border: 1px solid red; */
+  width: 100vw;
+  height: auto;
+}
+
+.testimonial-section-content {
+  /* border: 1px solid yellow; */
+  height: auto;
+  width: 100vw;
+}
+
+.testimonial-section-content h3 {
+  font-size: 3rem;
+  margin: 0px 30px;
+}
+
+.testimonial-section-content .body-intro-text-m {
+  color: #ffc600;
+  width: auto;
+  font-size: 1.8rem;
+  margin: 50px 30px;
+}
+
+.memojis-testimonial-section {
+  display: none;
+}
+
+/*  ------------------------------- OUR SERVICES SECTION ------------------------->>>>> */
+
+.services-section {
+  /* border: 1px solid red; */
+  margin-top: 80px;
+}
+
+.services-section-container {
+  width: 100vw;
+}
+
+.services-section-container h3 {
+  /* border: 1px solid green; */
+  width: auto;
+  font-size: 3.3rem;
+  text-align: center;
+}
+
+.services-cards-list {
+  /*  border: 1px solid green; */
+  flex-direction: column;
+  margin-top: 0px;
+}
+
+.services-card {
+  margin-top: 30px;
+}
+
+/*  ------------------------------- CTA SECTION ------------------------->>>>> */
+
+.CTA-section {
+  margin-top: 80px;
+}
+
+.CTA-section-container {
+  /* border: 1px solid green; */
+  width: 100vw;
+  height: auto;
+}
+
+.CTA-section-content {
+  /* border: 1px solid purple; */
+  width: 100vw;
+  height: auto;
+  padding: 55px 0;
+}
+
+.CTA-section-content h3 {
+  font-size: 3rem;
+  margin: 0px 30px;
+}
+
+.CTA-section-content p {
+  margin-top: 30px;
+}
+
+.CTA-section-email-input {
+  width: 325px;
+  height: 65px;
+  background-size: 25px;
+  background-position: 32px 2rem;
+}
+
+.subscribe-btn {
+  width: 325px;
+  height: 65px;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+/*  ------------------------------- FOOTER SECTION ------------------------->>>>> */
+
+.footer-section {
+  /* border: 1px solid magenta; */
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+
+.footer-container {
+  /* border: 1px solid red; */
+  width: 80vw;
+  height: auto;
+  flex-direction: column;
+  align-items: start;
+}
+
+.footer-links-list {
+  /* border: 1px solid green; */
+  margin-top: 50px;
+  text-align: left;
+  width: 325px;
+  height: auto;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.row-one-links {
+  align-self: start;
+}
+
+.row-two-links {
+  align-self: end;
+}
+
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
