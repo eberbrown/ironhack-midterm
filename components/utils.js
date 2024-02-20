@@ -20,17 +20,16 @@ async function getProjectByID(id) {
   //    }
 }
 
-
 function referenceTargetBtnId() {
   const learnMoreBtnEls = document.querySelectorAll(".project-card-btn");
 
-  learnMoreBtnEls.forEach(el => {
+  learnMoreBtnEls.forEach((el) => {
     el.onclick = () => {
       const targetID = el.getAttribute("id");
       //console.log(targetID);
       window.location.href = `http://127.0.0.1:5500/pages/project.html?id=${targetID}`;
       return targetID;
-    }
+    };
   });
 }
 
