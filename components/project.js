@@ -10,12 +10,12 @@ async function addProjectEl(id) {
   } catch (err) {
     console.error(err);
   }
-  referenceTargetBtnId();
+  //referenceTargetBtnId();
 }
 
 function projectLoad() {
     const searchParams = new URLSearchParams(window.location.search);
-    if (searchParams.has('id')) {
+    if (searchParams.has('id') && searchParams.get('id') <= 6 && 0 < searchParams.get('id')) {
         addProjectEl(searchParams.get('id'))
     } else {
         addProjectEl(1);
