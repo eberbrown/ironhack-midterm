@@ -53,6 +53,7 @@
 }
 
 .learn-more-btn {
+  display: block;
   margin-top: 54px;
   border: none;
   background-color: transparent;

@@ -1,15 +1,8 @@
-import { getProjectByID } from "./components/utils.js";
-import { generateCardEl } from "./components/cardElement.js";
+import { getProjectByID, referenceTargetBtnId } from "./components/utils.js";
+import { generateCardEl } from "./components/htmlElement.js";
 
-/* const projectInfo = async (id) => {
-  try {
-    const projectData = await getProjectByID(id);
-    return projectData;
-  } catch (err) {
-    console.error(err);
-  }
-};
- */
+
+
 async function addCardEl(id) {
   try {
     const { image, name, description, PRid = id } = await getProjectByID(id);
@@ -19,6 +12,7 @@ async function addCardEl(id) {
   } catch (err) {
     console.error(err);
   }
+  referenceTargetBtnId();
 }
 
 function addCardElemets() {
@@ -39,3 +33,5 @@ function addCardElemets() {
 }
 
 addCardElemets();
+
+
