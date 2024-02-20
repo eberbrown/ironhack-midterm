@@ -42,6 +42,13 @@ main {
   background-color: #6b708d10;
 }
 
+/* .contact-form-section form fieldset input:valid {
+  border: 1px solid green;
+}
+.contact-form-section form fieldset input:invalid {
+  border: 1px solid red;
+}
+ */
 .contact-form-section form fieldset input::placeholder,
 .contact-form-section form fieldset textarea::placeholder {
   color: #6b708d;
