@@ -3,7 +3,6 @@ async function getProjectByID(id) {
     fetch(`http://localhost:8000/projects?id=${id}`)
       .then((response) => response.json())
       .then((data) => {
-        //console.log(data[0]);
         resolve(data[0]);
       })
       .catch((err) => {
@@ -26,7 +25,6 @@ function referenceTargetBtnId() {
   learnMoreBtnEls.forEach((el) => {
     el.onclick = () => {
       const targetID = el.getAttribute("id");
-      //console.log(targetID);
       window.location.href = `http://127.0.0.1:5500/pages/project.html?id=${targetID}`;
       return targetID;
     };

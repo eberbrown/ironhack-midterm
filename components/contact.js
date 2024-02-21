@@ -1,4 +1,3 @@
-const formSubmitBtnEl = document.querySelector(".contact-form-btn");
 const contactFormEl = document.querySelector("#contactForm");
 
 function validateForm(nameInput, emailInput, phoneInput, messageInput) {
@@ -57,13 +56,6 @@ function validateForm(nameInput, emailInput, phoneInput, messageInput) {
   }
 
   function validateMessage() {
-    /* [A-Za-zÀ-ÖØ-öø-ÿ-' \d]: This character class matches any character that falls within the following ranges:
-        A-Za-z: Matches any alphabetic character, both uppercase and lowercase.
-        À-ÖØ-öø-ÿ: Matches additional characters beyond the basic Latin alphabet, including accented characters.
-        -' : Matches hyphens, apostrophes, and spaces.
-        \d: Matches any digit character (0-9).
-        +: Quantifier that matches one or more occurrences of the characters in the character class. */
-    const stringPattern = /^[A-Za-zÀ-ÖØ-öø-ÿ-' \d]+$/;
     if (messageInput !== "" && messageInput.length < 250) {
       return true;
     } else {

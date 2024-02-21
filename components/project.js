@@ -1,4 +1,4 @@
-import { getProjectByID, referenceTargetBtnId } from "../components/utils.js";
+import { getProjectByID } from "../components/utils.js";
 import { generateProjectDescEl } from "../components/htmlElement.js";
 
 async function addProjectEl(id) {
@@ -10,7 +10,6 @@ async function addProjectEl(id) {
   } catch (err) {
     console.error(err);
   }
-  //referenceTargetBtnId();
 }
 
 function projectLoad() {
