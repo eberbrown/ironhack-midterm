@@ -1,7 +1,13 @@
-import { getProjectByID, referenceTargetBtnId } from "./components/utils.js";
+import { getProjectByID, referenceTargetBtnId, postToDB, validateEmail } from "./components/utils.js";
 import { generateCardEl } from "./components/htmlElement.js";
 
+const subscribeFormEl = document.querySelector(".subscribeForm");
 
+class SubscribeFormDataClass {
+  constructor(femail) {
+    this.email = femail;
+  }
+}
 
 async function addCardEl(id) {
   try {
@@ -34,4 +40,23 @@ function addCardElemets() {
 
 addCardElemets();
 
+function validateSubscribeForm(emailInput) {
+  if (validateEmail(emailInput)) {
+    console.log("form submitted! :)");
+    return true;
+  } else {
+    console.log("this is not working");
+    return false;
+  }
+}
+
+subscribeFormEl.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const emailInput = document.querySelector(".subscribeEmail").value;
+  if (validateSubscribeForm(emailInput) === true) {
+    const newSubscribeEmail = new SubscribeFormDataClass(emailInput);
+    console.log(emailInput);
+    postToDB("subscribeEmails", newSubscribeEmail);
+  }
+})
 
