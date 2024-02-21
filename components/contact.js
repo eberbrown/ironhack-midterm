@@ -1,5 +1,15 @@
 const contactFormEl = document.querySelector("#contactForm");
 
+class FormDataClass {
+    constructor(fname, femail, fphone, fmessage) {
+        this.fullName = fname;
+        this.email = femail;
+        this.phoneNumber = fphone;
+        this.message = fmessage;
+    }
+}
+
+
 function validateForm(nameInput, emailInput, phoneInput, messageInput) {
   function validateName() {
     /* /: Delimiters marking the beginning and end of the regular expression.
@@ -66,8 +76,10 @@ function validateForm(nameInput, emailInput, phoneInput, messageInput) {
 
   if ( validateName() && validateEmail() && validatePhone() && validateMessage() ) {
     console.log("form submitted");
+    return true;
   } else {
     console.log("you still need to update info");
+    return false;
   }
 
 }
@@ -78,5 +90,23 @@ contactFormEl.addEventListener("submit", (e) => {
   const emailInput = document.querySelector("#femail").value;
   const phoneInput = document.querySelector("#fphone").value;
   const messageInput = document.querySelector("#fmessage").value;
-  validateForm(nameInput, emailInput, phoneInput, messageInput);
+  if (validateForm(nameInput, emailInput, phoneInput, messageInput) === true) {
+    const newFormMessage = new FormDataClass(nameInput, emailInput, phoneInput, messageInput)
+    saveFormSubmit(newFormMessage);
+  }
+  
 });
+
+function saveFormSubmit(formData) {
+    const jsonData = JSON.stringify(formData);
+    fetch('http://localhost:8000/formData', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: jsonData
+    })
+    .then( resp => resp.json() )
+    .then ( data => console.log(data) )
+    .catch( err => console.log(err) );
+}
