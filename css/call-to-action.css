@@ -57,6 +57,12 @@
   background-color: #072ac8;
   border: none;
   color: white;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background-color: #43D2FF;
+  color: #292e47;
 }
 
 

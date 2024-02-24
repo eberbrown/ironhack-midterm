@@ -46,6 +46,12 @@ main {
   border: none;
   color: white;
   margin-top: 40px;
+  cursor: pointer;
+}
+
+.get-in-touch-btn:hover {
+  background-color: #43D2FF;
+  color: #292e47;
 }
 
 .see-our-work-btn {
@@ -53,6 +59,11 @@ main {
   color: #6b708d;
   margin-left: 40px;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.see-our-work-btn:hover {
+  color: #292e47;
 }
 
 .hero-section-hero-image {
@@ -271,11 +282,16 @@ main {
   line-height: 23px;
 }
 
-.learn-more-btn {
+.services-card .learn-more-btn {
   margin-top: 36px;
   border: none;
   background-color: transparent;
+  text-decoration: none;
   color: #072ac8;
+}
+
+.services-card .learn-more-btn:hover {
+  color: #43D2FF;
 }
 
 /*  ------------------------------- MEDIA QUERIES ------------------------->>>>> */

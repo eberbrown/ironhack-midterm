@@ -1,10 +1,9 @@
 /*  -------------------------------- NAVBAR ----------------------------->>>>> */
 .nav-container {
   width: 100vw;
-  height: 100px;
+  height: auto;
   display: flex;
   margin: 0 auto;
-  align-items: flex-end;
 }
 
 .nav-components {
@@ -12,14 +11,13 @@
   height: 100px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
   width: 60.53px;
-  margin-top: 20px;
+  margin-left: 30px;
 }
 
 .nav-bar-links {
@@ -27,7 +25,6 @@
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
 }
 
 .nav-link {
@@ -43,13 +40,74 @@
   display: none;
 }
 
+.nav-burger-menu {
+  margin-right: 30px;
+}
+
+.nav-burger-menu img {
+  width: 40px;
+  height: 40px;
+}
+
+.no-show {
+  display: none;
+}
+
+.burger-menu-container {
+  position: absolute;
+  height: 85vh;
+  margin-top: 100px;
+  background-color: #F2F4FC;
+  background-color: #072ac8;
+  opacity: 0.96;
+}
+
+.burger-links-list {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.burger-links-list li {
+  margin: 30px 0;
+}
+
+.burger-links-list a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #072ac8;
+  color: #F2F4FC;
+  letter-spacing: 0.7px;
+}
+
 /*  ------------------------------- MEDIA QUERIES ------------------------->>>>> */
 /*  ------------------------------- MEDIA QUERIES ------------------------->>>>> */
 /*  ------------------------------- MEDIA QUERIES ------------------------->>>>> */
 @media screen and (min-width: 575px) {
+  /*  -------------------------------- NAVBAR ----------------------------->>>>> */
+  .logo {
+    margin-left: 50px;
+  }
+
+  .nav-burger-menu {
+    margin-right: 50px;
+  }
 }
 
 @media screen and (min-width: 767px) {
+  /*  -------------------------------- NAVBAR ----------------------------->>>>> */
+  .logo {
+    margin-left: 70px;
+  }
+
+  .nav-burger-menu {
+    margin-right: 70px;
+  }
 }
 
 @media screen and (min-width: 991px) {
@@ -65,7 +123,7 @@
   /*  -------------------------------- NAVBAR ----------------------------->>>>> */
 
   .nav-components {
-    height: 52px;
+    height: 100px;
   }
 
   .nav-components div:last-of-type {
@@ -74,11 +132,16 @@
 
   .contact-us-btn {
     width: 150px;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #072ac8;
     border: none;
     color: white;
     text-decoration: none;
+  }
+
+  .contact-us-btn:hover {
+    background-color: #43d2ff;
+    color: #292e47;
   }
 }
 
@@ -94,6 +157,7 @@
 
   .nav-components {
     width: 1099.36px;
+    height: 122px;
     margin: 0 auto;
   }
 }

@@ -20,7 +20,7 @@
     <nav class="nav-container">
         <section class="nav-components">
             <div class="logo">
-                <img src="../project-assets/logos/circle.svg" alt="Company Circle Logo">
+                <a href="http://127.0.0.1:5500"><img src="../project-assets/logos/circle.svg" alt="Company Circle Logo"></a>
             </div>
             <ul class="nav-bar-links">
                 <li>
@@ -33,9 +33,25 @@
                     <a href="http://127.0.0.1:5500#services-section" class="nav-link headline-text-r">Services</a>
                 </li>
             </ul>
-            <div>
+            <div class="nav-burger-menu no-show">
+                <img src="../project-assets/logos/burger-menu-svgrepo-com.svg" alt="">
+            </div>
+            <div class="contact-us-btn-container">
                 <a class="contact-us-btn headline-text-r" href="http://127.0.0.1:5500/pages/contact-us.html">Contact Us</a>
             </div>
+        </section>
+        <section class="burger-menu-container no-show">
+            <ul class="burger-links-list">
+                <li>
+                    <a href="http://127.0.0.1:5500" class="burger-nav-link headline-text-r">Home</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/pages/project.html" class="burger-nav-link headline-text-r">Projects</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/pages/contact-us.html" class="burger-nav-link headline-text-r">Contact Us</a>
+                </li>
+            </ul>
         </section>
     </nav>
     <main>
@@ -47,8 +63,7 @@
             </div>
             <h3>Looks like this page is sadly missing!</h3>
             <a href="http://127.0.0.1:5500">COME BACK HOME!</a>
-        </section>
-        
+        </section> 
         <footer class="footer-section">
             <article class="footer-container">
                 <div class="footer-circle-info">
@@ -81,6 +96,7 @@
         </footer>
     </main>
 
+    <script type="module" src="../components/navbar.js"></script>
 </body>
 
 </html>

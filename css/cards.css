@@ -58,6 +58,11 @@
   border: none;
   background-color: transparent;
   color: #072ac8;
+  cursor: pointer;
+}
+
+.learn-more-btn:hover {
+  color: #43D2FF;
 }
 
 /*  ------------------------------- MEDIA QUERIES ------------------------->>>>> */
