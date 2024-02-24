@@ -66,5 +66,9 @@ contactFormEl.addEventListener("submit", (e) => {
   if (validateContactForm(nameInput, emailInput, phoneInput, messageInput) === true) {
     const newFormMessage = new FormDataClass( nameInput, emailInput, phoneInput, messageInput );
     postToDB("formData", newFormMessage);
+    nameInputEl.value = "";
+    emailInputEl.value = "";
+    phoneInputEl.value = "";
+    messageInputEl.value = "";
   }
 });

@@ -1,6 +1,10 @@
+ /* https://ih-json-server-g29f.onrender.com */
+
+
 async function getProjectByID(id) {
   return new Promise((resolve, reject) => {
-    fetch(`http://localhost:8000/projects?id=${id}`)
+    /* fetch(`http://localhost:8000/projects?id=${id}`) */
+    fetch(`https://ih-json-server-g29f.onrender.com/projects?id=${id}`)
       .then((response) => response.json())
       .then((data) => {
         resolve(data[0]);
@@ -21,7 +25,14 @@ async function getProjectByID(id) {
 
 function postToDB(dataBase, objEl) {
   const jsonData = JSON.stringify(objEl);
-    fetch(`http://localhost:8000/${dataBase}`, {
+    /* fetch(`http://localhost:8000/${dataBase}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: jsonData
+    }) */
+    fetch(`https://ih-json-server-g29f.onrender.com/${dataBase}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
