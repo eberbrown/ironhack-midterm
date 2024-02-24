@@ -1,4 +1,10 @@
-import { postToDB, validateName, validateEmail, validatePhone, validateMessage, } from "../components/utils.js";
+import {
+  postToDB,
+  validateName,
+  validateEmail,
+  validatePhone,
+  validateMessage,
+} from "../components/utils.js";
 
 const contactFormEl = document.querySelector("#contactForm");
 const nameInputEl = document.querySelector("#fname");
@@ -24,7 +30,11 @@ function validateContactForm(nameInput, emailInput, phoneInput, messageInput) {
   const emailValidateReturn = validateEmail(emailInput);
   const phoneValidateReturn = validatePhone(phoneInput);
   const messageValidateReturn = validateMessage(messageInput);
-  if ( nameValidateReturn && emailValidateReturn && phoneValidateReturn & messageValidateReturn ) {
+  if (
+    nameValidateReturn &&
+    emailValidateReturn &&
+    phoneValidateReturn & messageValidateReturn
+  ) {
     console.log("form submitted");
     return true;
   } else {
@@ -33,19 +43,19 @@ function validateContactForm(nameInput, emailInput, phoneInput, messageInput) {
     } else {
       nameErrMsgEl.classList.add("no-show");
     }
-    
+
     if (!emailValidateReturn) {
       emailErrMsgEl.classList.remove("no-show");
     } else {
       emailErrMsgEl.classList.add("no-show");
-    } 
-    
+    }
+
     if (!phoneValidateReturn) {
       phoneErrMsgEl.classList.remove("no-show");
     } else {
       phoneErrMsgEl.classList.add("no-show");
-    } 
-    
+    }
+
     if (!messageValidateReturn) {
       msgErrMsgEl.classList.remove("no-show");
     } else {
@@ -63,12 +73,25 @@ contactFormEl.addEventListener("submit", (e) => {
   const emailInput = emailInputEl.value;
   const phoneInput = phoneInputEl.value;
   const messageInput = messageInputEl.value;
-  if (validateContactForm(nameInput, emailInput, phoneInput, messageInput) === true) {
-    const newFormMessage = new FormDataClass( nameInput, emailInput, phoneInput, messageInput );
+  if (
+    validateContactForm(nameInput, emailInput, phoneInput, messageInput) ===
+    true
+  ) {
+    const newFormMessage = new FormDataClass(
+      nameInput,
+      emailInput,
+      phoneInput,
+      messageInput
+    );
     postToDB("formData", newFormMessage);
     nameInputEl.value = "";
     emailInputEl.value = "";
     phoneInputEl.value = "";
     messageInputEl.value = "";
+    nameErrMsgEl.classList.add("no-show");
+    emailErrMsgEl.classList.add("no-show");
+    phoneErrMsgEl.classList.add("no-show");
+    msgErrMsgEl.classList.add("no-show");
+    alert("Form Submitted!");
   }
 });
