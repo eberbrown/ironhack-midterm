@@ -113,6 +113,14 @@
 @media screen and (min-width: 991px) {
   /*  -------------------------------- NAVBAR ----------------------------->>>>> */
 
+  .logo {
+    margin-left: 0px;
+  }
+
+  .nav-burger-menu {
+    margin-right: 0px;
+  }
+
   .nav-components {
     flex-direction: row;
     margin: 0 80px;

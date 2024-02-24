@@ -6,14 +6,12 @@ main {
 /*  ------------------------------- HERO SECTION ------------------------->>>>> */
 
 .hero-section {
-  /* border: 1px solid blue; */
   margin: 0 auto;
   margin-top: 40px;
   width: 100vw;
 }
 
 .hero-section-container {
-  /* border: 1px solid blue; */
   width: 100vw;
   height: auto;
   margin: 0 auto;
@@ -25,14 +23,12 @@ main {
 }
 
 .hero-section-content h1 {
-  /* border: 1px solid yellow; */
   font-size: 3.8rem;
   margin: 30px 30px 0 30px;
   color: #292e47;
 }
 
 .hero-section-content p {
-  /* border: 1px solid yellow; */
   margin: 0 auto;
   color: #6b708d;
   margin-top: 30px;
