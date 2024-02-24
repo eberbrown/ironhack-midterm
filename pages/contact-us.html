@@ -62,20 +62,32 @@
                 <fieldset>
                     <div class="name-area">
                         <label for="fname" class="body-intro-text-r">Full Name *</label>
+                        <div class="error-msg-container">
+                            <p class="no-show name-err-msg">Please enter your full name. E.g. John Denver</p>
+                        </div>
                         <input type="text" placeholder="Enter your full name" name="fullName" id="fname" class="headline-text-r" required type="text" minlength="2" maxlength="50">
                     </div>
                     <div class="email-phone-area">
                         <div class="email-area">
                             <label for="femail" class="body-intro-text-r">Email *</label>
+                            <div class="error-msg-container">
+                                <p class="no-show email-err-msg">Please enter a valid email. E.g. name@url.com</p>
+                            </div>
                             <input type="email" id="femail" placeholder="Enter your email address" name="email" class="headline-text-r" required type="email">
                         </div>
                         <div class="phone-area">
                             <label for="fphone" class="body-intro-text-r">Phone</label>
+                            <div class="error-msg-container">
+                                <p class="no-show phone-err-msg">Please enter a valid phone number. E.g. 333000666</p>
+                            </div>
                             <input type="tel" id="fphone" placeholder="Enter your phone number" name="phone" class="headline-text-r" type="tel">
                         </div>
                     </div>
                     <div class="message-area">
                         <label for="fmessage" class="body-intro-text-r">Message *</label>
+                        <div class="error-msg-container">
+                            <p class="no-show msg-err-msg">Please write a message...</p>
+                        </div>
                         <textarea name="message" id="fmessage" cols="30" rows="10" placeholder="Write your message here ..." class="headline-text-r" required type="textarea"></textarea>
                     </div>
                 </fieldset>

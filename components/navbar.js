@@ -16,7 +16,6 @@ function navBarBurger() {
 let shownBurgerMenu = false;
 function showBurgerMenu() {
   const navBurgerContainerEl = document.querySelector(".burger-menu-container");
-
   if (shownBurgerMenu === false) {
     shownBurgerMenu = true;
     navBurgerContainerEl.classList.remove("no-show");

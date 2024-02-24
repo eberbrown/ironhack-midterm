@@ -59,7 +59,7 @@ function validateName(name) {
   if (stringPattern.test(name) && name.indexOf(" ") !== -1) {
     return true;
   } else {
-    alert("Please enter a name. Ej. John Denver");
+    /* alert("Please enter a name. Ej. John Denver"); */
     return false;
   }
 }
@@ -81,7 +81,7 @@ function validateEmail(email) {
   if (emailPattern.test(email)) {
     return true;
   } else {
-    alert("Please enter a valid email. Ej. name@provider.com");
+    /* alert("Please enter a valid email. Ej. name@provider.com"); */
     return false;
   }
 }
@@ -94,7 +94,7 @@ function validatePhone(phone) {
   if (digitsPattern.test(phone) || phone === "") {
     return true;
   } else {
-    alert("Please enter a valid phone number. Ej. 650998365");
+    /* alert("Please enter a valid phone number. Ej. 650998365"); */
     return false;
   }
 }
@@ -103,7 +103,7 @@ function validateMessage(message) {
   if (message !== "" && message.length < 250) {
     return true;
   } else {
-    alert("Please enter your message. Ej. Thank you for your products!");
+    /* alert("Please enter your message. Ej. Thank you for your products!"); */
     return false;
   }
 }
