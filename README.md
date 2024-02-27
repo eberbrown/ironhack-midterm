@@ -1,4 +1,4 @@
-# Awesome Project Name
+# Circle Page
 
 ## Description
 This project is a comprehensive web application that showcases various features and functionalities. It includes a landing page, project details page, contact form, and a visually appealing UI. It is designed to provide a seamless and engaging user experience.
@@ -34,15 +34,45 @@ Here are some code snippets from the project files:
 
 **util.js**
 ```javascript
-// Sample utility function
+async function getProjectByID(id) {
+  return new Promise((resolve, reject) => {
+    fetch(`https://ih-json-server-g29f.onrender.com/projects?id=${id}`)
+      .then((response) => response.json())
+      .then((data) => {
+        resolve(data[0]);
+      })
+      .catch((err) => {
+        reject(err);
+      });
+  });
+}
+function postToDB(dataBase, objEl) {
+  const jsonData = JSON.stringify(objEl);
+    fetch(`https://ih-json-server-g29f.onrender.com/${dataBase}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: jsonData
+    })
+    .then(resp => resp.json())
+    .then(data => console.log(data))
+    .catch(err => console.log(err));
+}
+
 function validateEmail(email) {
-  // Email validation logic...
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (emailPattern.test(email)) {
+    return true;
+  } else {
+    return false;
+  }
 }
 ```
 
 ## Credits
-
-Special thanks to [Contributor Name] for their valuable input on the project. Additionally, the project utilizes a JSON server hosted on [server hosting platform].
+Coded by Eber Brown
+Additionally, the project can use a JSON server hosted on locally.
 
 ## License
 
@@ -50,6 +80,4 @@ This project is licensed under the [License Name] license.
 
 ## Author
 
-Your Name
-[Your Website]
-[Your Email]
+Eber Brown
