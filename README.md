@@ -38,6 +38,7 @@ Here are some code snippets from the project files:
 function validateEmail(email) {
   // Email validation logic...
 }
+```
 
 ## Credits
 
