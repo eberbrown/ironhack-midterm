@@ -49,6 +49,11 @@
   color: #292e47;
 }
 
+.CTA-section-email-input:focus {
+  background-image: none;
+  padding-left: 20px;
+}
+
 .subscribe-btn {
   width: 325px;
   height: 65px;

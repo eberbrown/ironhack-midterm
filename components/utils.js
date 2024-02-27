@@ -1,6 +1,3 @@
- /* https://ih-json-server-g29f.onrender.com */
-
-
 async function getProjectByID(id) {
   return new Promise((resolve, reject) => {
     /* fetch(`http://localhost:8000/projects?id=${id}`) */
@@ -14,13 +11,13 @@ async function getProjectByID(id) {
       });
   });
 
-  //    try {
-  //     const response = await fetch(`http://localhost:8000/projects?id=${id}`)
-  //     const data = await response.json()
-  //     return data[0]
-  //    } catch (err) {
-  //     throw err
-  //    }
+/* try {
+const response = await fetch(`http://localhost:8000/projects?id=${id}`)
+const data = await response.json()
+return data[0]
+} catch (err) {
+ throw err
+} */
 }
 
 function postToDB(dataBase, objEl) {

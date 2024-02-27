@@ -52,11 +52,14 @@ function validateSubscribeForm(emailInput) {
 
 subscribeFormEl.addEventListener("submit", (e) => {
   e.preventDefault();
-  const emailInput = document.querySelector(".subscribeEmail").value;
+  const emailInputEl = document.querySelector(".subscribeEmail");
+  const emailInput = emailInputEl.value;
   if (validateSubscribeForm(emailInput) === true) {
     const newSubscribeEmail = new SubscribeFormDataClass(emailInput);
     console.log(emailInput);
     postToDB("subscribeEmails", newSubscribeEmail);
+    emailInputEl.value = "";
+    alert("Email Submitted! Stay tuned to our awesome emails!");
   }
 })
 
