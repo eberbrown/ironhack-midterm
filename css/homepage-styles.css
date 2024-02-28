@@ -1,0 +1,612 @@
+main {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+/*  ------------------------------- HERO SECTION ------------------------->>>>> */
+
+.hero-section {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 100vw;
+}
+
+.hero-section-container {
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+.hero-section-content h1 {
+  font-size: 3.8rem;
+  margin: 30px 30px 0 30px;
+  color: #292e47;
+}
+
+.hero-section-content p {
+  margin: 0 auto;
+  color: #6b708d;
+  margin-top: 30px;
+  width: 325px;
+}
+
+.get-in-touch-btn {
+  width: 150px;
+  padding: 10px;
+  background-color: #072ac8;
+  border: none;
+  color: white;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.get-in-touch-btn:hover {
+  background-color: #43D2FF;
+  color: #292e47;
+}
+
+.see-our-work-btn {
+  border: none;
+  color: #6b708d;
+  margin-left: 40px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.see-our-work-btn:hover {
+  color: #292e47;
+}
+
+.hero-section-hero-image {
+  width: 325px;
+  height: 370px;
+}
+
+.hero-section-image-container {
+  /* border: 1px solid violet; */
+  width: 325px;
+  height: 370px;
+}
+
+.hero-section-card-one {
+  display: none;
+}
+
+.hero-section-card-two {
+  display: none;
+}
+
+/*  ------------------------------- CLIENT SECTION ------------------------->>>>> */
+
+.client-section {
+  margin-top: 80px;
+  /* border: 1px solid red; */
+}
+
+.clients-container {
+  /* border: 1px solid green; */
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+.clients-section-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  column-gap: 70px;
+  row-gap: 40px;
+  margin: 0 40px;
+}
+
+.clients-section-list {
+  height: auto;
+}
+
+.client-logo {
+  width: 110px;
+}
+
+.clients-section-list li:last-of-type {
+  display: none;
+}
+
+/*  ------------------------------- TESTIMONIAL SECTION ------------------------->>>>> */
+
+.testimonial-section {
+  margin-top: 80px;
+}
+
+.testimonial-section-container {
+  width: 100vw;
+  height: auto;
+
+  background-color: #292e47;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 55px 0;
+}
+
+.testimonial-section-bg-img {
+  position: absolute;
+  width: 100%;
+}
+
+.testimonial-section-memojis-container {
+  /* border: 1px solid red; */
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-section-content {
+  /* border: 1px solid yellow; */
+  height: auto;
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.testimonial-section-content h3 {
+  font-size: 3rem;
+  color: #f2f4fc;
+  margin: 0px 30px;
+}
+
+.testimonial-section-content .body-intro-text-m {
+  color: #ffc600;
+  width: auto;
+  font-size: 1.8rem;
+  margin: 50px 30px;
+}
+
+.testimonial-section-profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-section-profile-info div {
+  margin-left: 11px;
+}
+
+.testimonial-section-profile-info p:first-of-type {
+  color: #a2d6f9;
+}
+
+.testimonial-section-profile-info p:last-of-type {
+  color: #fff;
+  text-align: left;
+}
+
+.memojis-testimonial-section {
+  display: none;
+}
+
+.testimonial-section-profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/*  ------------------------------- OUR SERVICES SECTION ----------------------->>>>> */
+
+.services-section {
+  /* border: 1px solid red; */
+  margin-top: 80px;
+}
+
+.services-section-container {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.services-section-container h3 {
+  /* border: 1px solid green; */
+  width: auto;
+  color: #292e47;
+  font-size: 3.3rem;
+  text-align: center;
+}
+
+.services-cards-list {
+  /*  border: 1px solid green; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0px;
+}
+
+.services-card {
+  list-style: none;
+  width: 340px;
+  height: 380px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 30px;
+}
+
+.services-card div:first-of-type {
+  width: 80px;
+  height: 80px;
+  background-color: #ecf7ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.services-card-image {
+  /* border: 1px solid yellow; */
+  width: 40px;
+  height: 40px;
+}
+
+.card-content {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.services-card-name {
+  margin-top: 30px;
+  color: #292e47;
+}
+
+.services-card-description {
+  margin-top: 20px;
+  color: #6b708d;
+  line-height: 23px;
+}
+
+.services-card .learn-more-btn {
+  margin-top: 36px;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  color: #072ac8;
+}
+
+.services-card .learn-more-btn:hover {
+  color: #43D2FF;
+}
+
+/*  ------------------------------- MEDIA QUERIES ------------------------->>>>> */
+/*  ------------------------------- MEDIA QUERIES ------------------------->>>>> */
+/*  ------------------------------- MEDIA QUERIES ------------------------->>>>> */
+@media screen and (min-width: 575px) {
+  /*  ------------------------------- HERO SECTION ------------------------->>>>> */
+
+  .hero-section-container {
+    width: 80vw;
+  }
+
+  .hero-section-content h1 {
+    margin: 40px 30px 0 30px;
+  }
+
+  .hero-section-content p {
+    margin-top: 40px;
+    width: 400px;
+  }
+
+  /*  ------------------------------- CLIENT SECTION ------------------------->>>>> */
+
+  .client-section {
+    margin-top: 100px;
+  }
+
+  .clients-container {
+    width: 100vw;
+  }
+
+  .clients-section-list {
+    column-gap: 150px;
+    row-gap: 60px;
+    margin: 0 40px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /*  ------------------------------- TESTIMONIAL SECTION ------------------------->>>>> */
+
+  .testimonial-section {
+    margin-top: 100px;
+  }
+
+  .testimonial-section-container {
+    width: 90vw;
+    padding: 60px 0;
+  }
+
+  .testimonial-section-memojis-container {
+    width: 90vw;
+  }
+
+  .testimonial-section-content {
+    width: 90vw;
+  }
+
+  .testimonial-section-content h3 {
+    margin: 0px 50px;
+  }
+
+  .testimonial-section-content .body-intro-text-m {
+    margin: 50px 150px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+
+  /*  ------------------------------- HERO SECTION ------------------------->>>>> */
+
+  .hero-section {
+    margin-top: 100px;
+  }
+
+  .hero-section-container {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .hero-section-content h1 {
+    margin: 40px 30px 0 0px;
+  }
+
+  .hero-section-content p {
+    margin-left: 0;
+  }
+
+  /*  ------------------------------- CLIENT SECTION ------------------------->>>>> */
+
+  .clients-section-list {
+    display: flex;
+    justify-content: space-between;
+    width: 85vw;
+    height: 96px;
+    margin: 0 auto;
+  }
+
+  .client-logo {
+    width: 100px;
+  }
+
+  .clients-section-list li:last-of-type {
+    display: none;
+  }
+
+  /*  ------------------------------- TESTIMONIAL SECTION ------------------------->>>>> */
+
+  .testimonial-section-content .body-intro-text-m {
+    margin: 50px 250px;
+  }
+}
+
+@media screen and (min-width: 1115px) {
+
+  /*  ------------------------------- HERO SECTION ------------------------->>>>> */
+
+  .hero-section-image-container {
+    width: 456px;
+    height: 520px;
+  }
+
+  .hero-section-hero-image {
+    width: 456px;
+    height: 520px;
+  }
+
+  /*  ---------------------------- OUR SERVICES SECTION ---------------------->>>>> */
+
+  .services-section-container {
+    width: 90vw;
+  }
+
+  .services-cards-list {
+    flex-direction: row;
+    margin-top: 23px;
+  }
+
+  .services-card {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    width: 1440px;
+  }
+
+  /*  ------------------------------- HERO SECTION ------------------------->>>>> */
+
+  .hero-section {
+    margin-top: 100px;
+    width: 1440px;
+  }
+
+  .hero-section-container {
+    width: 1100px;
+    height: 650px;
+  }
+
+  .hero-section-content h1 {
+    font-size: 6rem;
+  }
+
+  .hero-section-content p {
+    width: 435px;
+  }
+
+  .hero-section-image-container {
+    width: 570px;
+    height: 650px;
+    position: relative;
+  }
+
+  .hero-section-hero-image {
+    width: 570px;
+    height: 650px;
+    position: relative;
+  }
+
+  .hero-section-card-one {
+    display: block;
+    width: 360px;
+    height: 396px;
+    position: absolute;
+    top: -35px;
+    left: -88px;
+  }
+
+  .hero-section-card-two {
+    display: block;
+    width: 340px;
+    height: 343px;
+    position: absolute;
+    bottom: -125px;
+    right: -78px;
+  }
+
+  /*  ------------------------------- CLIENT SECTION ------------------------->>>>> */
+
+  .client-section {
+    margin-top: 130px;
+  }
+
+  .clients-container {
+    width: 1100px;
+    height: 96px;
+  }
+
+  .clients-section-list {
+    width: 1100px;
+    column-gap: normal;
+    margin: 0 auto;
+  }
+
+  .clients-section-list li:last-of-type {
+    display: block;
+  }
+
+  .client-logo {
+    width: 104px;
+  }
+
+  /*  ---------------------------- TESTIMONIAL SECTION ---------------------->>>>> */
+
+  .testimonial-section {
+    margin-top: 200px;
+  }
+
+  .testimonial-section-container {
+    width: 1320px;
+    height: 622px;
+    padding: 0;
+  }
+
+  .testimonial-section-memojis-container {
+    width: 1185px;
+    height: 498px;
+    position: relative;
+  }
+
+  .testimonial-section-content {
+    height: 382px;
+    width: 1100px;
+  }
+
+  .testimonial-section-content h3 {
+    font-size: 4rem;
+  }
+
+  .testimonial-section-content .body-intro-text-m {
+    font-size: 2.4rem;
+    width: 536px;
+    margin: 0;
+  }
+
+  .memojis-testimonial-section {
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+  }
+
+  .memoji-one {
+    top: 0;
+    left: 0;
+  }
+
+  .memoji-two {
+    top: 0;
+    right: 0;
+  }
+
+  .memoji-three {
+    bottom: 0;
+    left: 0;
+  }
+
+  .memoji-four {
+    bottom: 0;
+    right: 0;
+  }
+
+  /*  ------------------------ OUR SERVICES SECTION --------------------->>>>> */
+
+  .services-section {
+    margin-top: 200px;
+  }
+
+  .services-section-container {
+    width: 1100px;
+  }
+
+  .services-section-container h3 {
+    font-size: 4rem;
+    width: 265px;
+    text-align: left;
+  }
+
+  .services-cards-list {
+    flex-direction: row;
+    margin-top: 70px;
+  }
+
+  .services-card {
+    margin-top: 0;
+  }
+}
+
+/* Landscape */
+
+@media screen and (max-width: 1115px) and (orientation: landscape) {
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+}
+
+@media screen and (max-width: 577px) and (orientation: landscape) {
+}

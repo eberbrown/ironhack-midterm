@@ -1,33 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Circle - MidTerm</title>
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/call-to-action.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/homepage-styles.css">
+    <title>Circle - Home</title>
 </head>
+
 <body>
     <nav class="nav-container">
         <section class="nav-components">
             <div class="logo">
-                <img src="project-assets/logos/circle.svg" alt="Company Circle Logo">
+                <a href="/index.html"><img src="project-assets/logos/circle.svg" alt="Company Circle Logo"></a>
             </div>
-            <ul>
+            <ul class="nav-bar-links">
                 <li>
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="/index.html" class="nav-link headline-text-r">Home</a>
                 </li>
                 <li>
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#projects-section" class="nav-link headline-text-r">Projects</a>
                 </li>
                 <li>
-                    <a href="#Services" class="nav-link">Services</a>
+                    <a href="#services-section" class="nav-link headline-text-r">Services</a>
                 </li>
             </ul>
-            <div>
-                <button class="contact-us-btn">Contact Us</button>
+            <div class="nav-burger-menu no-show">
+                <img src="project-assets/logos/burger-menu-svgrepo-com.svg" alt="">
+            </div>
+            <div class="contact-us-btn-container">
+                <a class="contact-us-btn headline-text-r" href="/pages/contact-us.html">Contact Us</a>
             </div>
         </section>
+        <section class="burger-menu-container no-show">
+            <ul class="burger-links-list">
+                <li>
+                    <a href="/index.html" class="burger-nav-link headline-text-r">Home</a>
+                </li>
+                <li>
+                    <a href="/pages/project.html" class="burger-nav-link headline-text-r">Projects</a>
+                </li>
+                <li>
+                    <a href="/pages/contact-us.html" class="burger-nav-link headline-text-r">Contact Us</a>
+                </li>
+
+            </ul>
+        </section>
     </nav>
-    
+    <main>
+        <header class="hero-section" id="hero-section">
+            <section class="hero-section-container">
+                <article class="hero-section-content">
+                    <h1>Empower Your Business With Stunning Design!</h1>
+                    <p class="body-intro-text-r">Circle is a digital design and development studio. We design and
+                        develop astonishing websites and
+                        mobile apps.</p>
+                        <a href="http://127.0.0.1:5500/pages/contact-us.html"><button class="get-in-touch-btn headline-text-m">Get in touch</button></a>
+                        <a href="http://127.0.0.1:5500/pages/project.html"><button class="see-our-work-btn headline-text-m">See our work</button></a>
+                </article>
+                <article class="hero-section-image">
+                    <div class="hero-section-image-container">
+                        <img src="project-assets/hero-section/hero-image.png"
+                            alt="header image of a young and trustworthy developer." class="hero-section-hero-image">
+                        <img src="project-assets/hero-section/card-1.png" alt="" class="hero-section-card-one">
+                        <img src="project-assets/hero-section/card-2.png" alt="" class="hero-section-card-two">
+                    </div>
+                </article>
+            </section>
+        </header>
+        <section class="client-section">
+            <div class="clients-container">
+                <ul class="clients-section-list">
+                    <li>
+                        <img src="project-assets/logos/airbnb-logo.svg" alt="cliente logo image company airbnb"
+                            class="client-logo">
+                    </li>
+                    <li>
+                        <img src="project-assets/logos/google-logo.svg" alt="cliente logo image company google"
+                            class="client-logo client-logo-google">
+                    </li>
+                    <li>
+                        <img src="project-assets/logos/microsoft-logo.svg" alt="cliente logo image company microsoft"
+                            class="client-logo">
+                    </li>
+                    <li>
+                        <img src="project-assets/logos/fedex-logo.svg" alt="cliente logo image company fedex"
+                            class="client-logo">
+                    </li>
+                    <li>
+                        <img src="project-assets/logos/amazon-logo.svg" alt="cliente logo image company amazon"
+                            class="client-logo-amazon">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects-section" id="projects-section">
+            <article class="projects-section-container">
+                <h3>Recent Projects</h3>
+                <ul class="project-cards-list">
+                    <!-- <li class="project-card">
+                        <div>
+                            <img src="project-assets/projects-section/1.jpg" alt="" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <p class="body-intro-text-m project-card-name">Simplify</p>
+                            <p class="headline-text-r project-card-description">UI Design & App Development</p>
+                            <a class="headline-text-r learn-more-btn project-card-btn">Learn more</a>
+                        </div>
+                    </li>
+                    <li class="project-card">
+                        <div class="card-image-container">
+                            <img src="project-assets/projects-section/2.jpg" alt="" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <p class="body-intro-text-m project-card-name">Dashcoin</p>
+                            <p class="headline-text-r project-card-description">Web Development</p>
+                            <a class="headline-text-r learn-more-btn project-card-btn">Learn more</a>
+                        </div>
+                    </li>
+                    <li class="project-card">
+                        <div>
+                            <img src="project-assets/projects-section/3.jpg" alt="" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <p class="body-intro-text-m project-card-name">Vectorify</p>
+                            <p class="headline-text-r project-card-description">User Experience Design</p>
+                            <a class="headline-text-r learn-more-btn project-card-btn">Learn more</a>
+                        </div>
+                    </li> -->
+                </ul>
+            </article>
+        </section>
+        <section class="testimonial-section">
+            <article class="testimonial-section-container">
+                <img src="project-assets/testimonial-section/orbit.png"
+                    alt="background image of an orbit. It blends in the background." class="testimonial-section-bg-img">
+                <div class="testimonial-section-memojis-container">
+                    <div class="testimonial-section-content">
+                        <h3>Hear What Our Clients Have to Say</h3>
+                        <p class="body-intro-text-m">“Circle helped us through every stage of our startup. We really
+                            enjoyed working with you.”</p>
+                        <div class="testimonial-section-profile-info">
+                            <img src="project-assets/testimonial-section/profile.png"
+                                alt="small profile picture of testimonial person"
+                                class="testimonial-section-profile-img">
+                            <div>
+                                <p class="headline-text-r">Kristin Watson</p>
+                                <p class="caption-two-text">booking.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="project-assets/testimonial-section/memoji-1.png" alt="memoji 1. Woman crossing fingers."
+                        class="memojis-testimonial-section memoji-one">
+                    <img src="project-assets/testimonial-section/memoji-2.png"
+                        alt="memoji 2. man winking with a cap on." class="memojis-testimonial-section memoji-two">
+                    <img src="project-assets/testimonial-section/memoji-3.png"
+                        alt="memoji 3. man giving the thumbs up signal."
+                        class="memojis-testimonial-section  memoji-three">
+                    <img src="project-assets/testimonial-section/memoji-4.png"
+                        alt="memoji 4. woman cheering with confeti." class="memojis-testimonial-section  memoji-four">
+                </div>
+            </article>
+
+        </section>
+        <section class="services-section" id="services-section">
+            <article class="services-section-container">
+                <h3>Our Services</h3>
+                <ul class="services-cards-list">
+                    <li class="services-card">
+                        <div>
+                            <img src="project-assets/services-section/icons/1.svg" alt="" class="services-card-image">
+                        </div>
+                        <div class="card-content">
+                            <p class="body-intro-text-m services-card-name">User Interface Design</p>
+                            <p class="headline-text-r services-card-description">Circle provides you with a stunning
+                                user interface design that is accessible to everyone.</p>
+                            <a class="headline-text-r learn-more-btn" href="#">Learn more</a>
+                        </div>
+                    </li>
+                    <li class="services-card">
+                        <div>
+                            <img src="project-assets/services-section/icons/2.svg" alt="" class="services-card-image">
+                        </div>
+                        <div class="card-content">
+                            <p class="body-intro-text-m services-card-name">User Experience Design</p>
+                            <p class="headline-text-r services-card-description">Circle always focuses on delivering the
+                                best user experience to your customers.</p>
+                            <a class="headline-text-r learn-more-btn">Learn more</a>
+                        </div>
+                    </li>
+                    <li class="services-card">
+                        <div>
+                            <img src="project-assets/services-section/icons/3.svg" alt="" class="services-card-image">
+                        </div>
+                        <div class="card-content">
+                            <p class="body-intro-text-m services-card-name">Application Development</p>
+                            <p class="headline-text-r services-card-description">We develop high-quality mobile and web
+                                applications using the latest technology stack.</p>
+                            <a class="headline-text-r learn-more-btn">Learn more</a>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="CTA-section">
+            <article class="CTA-section-container">
+                <div class="CTA-section-content">
+                    <h3>Do you have any questions?</h3>
+                    <p class="body-intro-text-r">Let us help you!</p>
+                    <form action="#" method="post" class="subscribeForm">
+                        <input type="email" name="subscribeEmail"
+                            class="CTA-section-email-input headline-text-m subscribeEmail" placeholder="Enter your email">
+                        <button type="submit" class="subscribe-btn headline-text-m">Subscribe</button>
+                    </form>
+                </div>
+            </article>
+        </section>
+        <footer class="footer-section">
+            <article class="footer-container">
+                <div class="footer-circle-info">
+                    <div class="logo">
+                        <img src="project-assets/logos/circle.svg" alt="Company Circle Logo">
+                    </div>
+                    <p class="headline-text-r">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+                </div>
+                <ul class="footer-links-list">
+                    <li class="row-one-links">
+                        <a href="/pages/404.html" class="footer-links headline-text-r">Team</a>
+                    </li>
+                    <li class="row-one-links">
+                        <a href="#services-section" class="footer-links headline-text-r">Services</a>
+                    </li>
+                    <li class="row-one-links">
+                        <a href="/pages/404.html" class="footer-links headline-text-r">About Us</a>
+                    </li>
+                    <li class="row-two-links">
+                        <a href="/pages/404.html" class="footer-links headline-text-r">Press</a>
+                    </li>
+                    <li class="row-two-links">
+                        <a href="#projects-section" class="footer-links headline-text-r">Projects</a>
+                    </li>
+                    <li class="row-two-links">
+                        <a href="/pages/404.html" class="footer-links headline-text-r">Privacy Policy</a>
+                    </li>
+                </ul>
+            </article>
+        </footer>
+    </main>
+
+    <script src="index.js" type="module"></script>
+    <script src="components/navbar.js" type="module"></script>
+
 </body>
+
 </html>

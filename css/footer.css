@@ -1,0 +1,109 @@
+
+/*  ------------------------------- FOOTER SECTION ------------------------->>>>> */
+
+.footer-section {
+  margin: 0 auto;
+    margin-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .footer-container {
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .footer-circle-info p {
+    width: 260px;
+    color: #6b708d;
+    margin-top: 30px;
+  }
+  
+  .footer-links-list {
+    list-style: none;
+    margin-top: 50px;
+    text-align: left;
+    width: 325px;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 30px;
+  }
+  
+  .row-one-links {
+    align-self: start;
+  }
+  
+  .row-two-links {
+    align-self: end;
+  }
+  
+  .footer-links-list li a {
+    text-decoration: none;
+    color: #6b708d;
+  }
+
+
+/*  ------------------------------- MEDIA QUERIES ------------------------->>>>> */
+/*  ------------------------------- MEDIA QUERIES ------------------------->>>>> */
+/*  ------------------------------- MEDIA QUERIES ------------------------->>>>> */
+@media screen and (min-width: 575px) {
+}
+
+@media screen and (min-width: 767px) {
+}
+
+@media screen and (min-width: 991px) {
+}
+
+@media screen and (min-width: 1115px) {
+  /*  ------------------------------- FOOTER SECTION ------------------------->>>>> */
+
+  .footer-container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+}
+
+@media screen and (min-width: 1440px) {
+  /*  ------------------------------- FOOTER SECTION ------------------------->>>>> */
+
+  .footer-section {
+    margin-top: 170px;
+    padding-bottom: 100px;
+  }
+
+  .footer-container {
+    width: 1100px;
+    height: 112px;
+  }
+
+  .footer-links-list {
+    margin-top: 0;
+    width: 435px;
+    height: 112px;
+    column-gap: 106px;
+    row-gap: 60px;
+  }
+}
+
+/* Landscape */
+
+@media screen and (max-width: 1115px) and (orientation: landscape) {
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+}
+
+@media screen and (max-width: 577px) and (orientation: landscape) {
+}

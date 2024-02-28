@@ -1,0 +1,158 @@
+main {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+/*  ------------------------- 404 SECTION ------------------>>>>> */
+
+.fourOfour-section {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #292e47;
+  margin-top: 45px;
+  text-align: center;
+}
+
+.fourOfour-section h1 {
+  color: #6b708d;
+  font-size: 10rem;
+}
+
+.fourOfour-section h3:first-of-type {
+  font-size: 1.5rem;
+}
+
+.fourOfour-section img {
+  width: auto;
+  height: 40vh;
+  object-fit: cover;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 5px #292e47 solid;
+  border-radius: 3px;
+  margin: 30px 0;
+}
+
+.fourOfour-section h3:last-of-type {
+  font-size: 2.5rem;
+  color: #6b708d;
+  width: 300px;
+}
+
+.fourOfour-section a {
+  text-decoration: none;
+  width: 120px;
+  padding: 15px;
+  background-color: #072ac8;
+  border: none;
+  color: white;
+  margin-top: 40px;
+}
+/*  ------------------------------- MEDIA QUERIES ------------------------->>>>> */
+/*  ------------------------------- MEDIA QUERIES ------------------------->>>>> */
+/*  ------------------------------- MEDIA QUERIES ------------------------->>>>> */
+@media screen and (min-width: 575px) {
+}
+
+@media screen and (min-width: 767px) {
+  .fourOfour-section {
+    margin-top: 50px;
+  }
+
+  .fourOfour-section h1 {
+    font-size: 12rem;
+  }
+
+  .fourOfour-section h3:first-of-type {
+    font-size: 2rem;
+  }
+
+  .fourOfour-section img {
+    height: 42vh;
+    border: 6px #292e47 solid;
+  }
+
+  .fourOfour-section h3:last-of-type {
+    font-size: 3rem;
+    width: 350px;
+  }
+  
+  .fourOfour-section a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .fourOfour-section {
+    height: 95vh;
+  }
+
+  .fourOfour-section h1 {
+    font-size: 15rem;
+  }
+
+  .fourOfour-section h3:first-of-type {
+    font-size: 2rem;
+  }
+
+  .fourOfour-section img {
+    height: 45vh;
+    border: 7px #292e47 solid;
+  }
+
+  .fourOfour-section h3:last-of-type {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1115px) {
+}
+
+@media screen and (min-width: 1400px) {
+}
+
+@media screen and (min-width: 1440px) {
+  /*  ------------------------- 404 SECTION ------------------>>>>> */
+  .fourOfour-section {
+    height: 100vh;
+    margin-top: 100px;
+  }
+
+  .fourOfour-section h1 {
+    font-size: 16rem;
+  }
+
+  .fourOfour-section h3:first-of-type {
+    font-size: 2.5rem;
+  }
+
+  .fourOfour-section img {
+    height: 45vh;
+    border: 7px #292e47 solid;
+  }
+
+  .fourOfour-section h3:last-of-type {
+    font-size: 4rem;
+    width: 450px;
+  }
+
+  .fourOfour-section a {
+    width: 150px;
+    padding: 20px;
+    font-size: 1.3rem;
+  }
+}
+
+/* Landscape */
+
+@media screen and (max-width: 1115px) and (orientation: landscape) {
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+}
+
+@media screen and (max-width: 577px) and (orientation: landscape) {
+}
