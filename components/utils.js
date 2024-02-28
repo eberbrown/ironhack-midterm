@@ -47,7 +47,8 @@ function referenceTargetBtnId() {
   learnMoreBtnEls.forEach((el) => {
     el.onclick = () => {
       const targetID = el.getAttribute("id");
-      window.location.href = `http://127.0.0.1:5500/pages/project.html?id=${targetID}`;
+      /* window.location.href = `http://127.0.0.1:5500/pages/project.html?id=${targetID}`; */
+      window.location.href = `../pages/project.html?id=${targetID}`;
       return targetID;
     };
   });
