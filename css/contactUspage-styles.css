@@ -65,6 +65,7 @@ main {
   padding-top: 20px;
   margin: 15px 0 30px 0;
   background-color: #6b708d10;
+  resize: none;
 }
 
 .contact-form-btn {

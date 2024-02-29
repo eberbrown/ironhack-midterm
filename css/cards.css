@@ -116,14 +116,13 @@
 
   .projects-section-container h3 {
     font-size: 4rem;
-    width: 265px;
     margin-left: 0;
     text-align: left;
   }
 
   .project-cards-list {
     flex-direction: row;
-    margin-top: 23px;
+    margin-top: 70px;
   }
 
   .project-card {
