@@ -68,7 +68,6 @@ main {
 }
 
 .hero-section-image-container {
-  /* border: 1px solid violet; */
   width: 325px;
   height: 370px;
 }
@@ -85,11 +84,9 @@ main {
 
 .client-section {
   margin-top: 80px;
-  /* border: 1px solid red; */
 }
 
 .clients-container {
-  /* border: 1px solid green; */
   width: 100vw;
   height: auto;
   margin: 0 auto;
@@ -142,7 +139,6 @@ main {
 }
 
 .testimonial-section-memojis-container {
-  /* border: 1px solid red; */
   width: 100vw;
   height: auto;
   margin: 0 auto;
@@ -151,7 +147,6 @@ main {
 }
 
 .testimonial-section-content {
-  /* border: 1px solid yellow; */
   height: auto;
   width: 100vw;
   margin: 0 auto;
@@ -206,7 +201,6 @@ main {
 /*  ------------------------------- OUR SERVICES SECTION ----------------------->>>>> */
 
 .services-section {
-  /* border: 1px solid red; */
   margin-top: 80px;
 }
 
@@ -216,7 +210,6 @@ main {
 }
 
 .services-section-container h3 {
-  /* border: 1px solid green; */
   width: auto;
   color: #292e47;
   font-size: 3.3rem;
@@ -224,8 +217,6 @@ main {
 }
 
 .services-cards-list {
-  /*  border: 1px solid green; */
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -257,7 +248,6 @@ main {
 }
 
 .services-card-image {
-  /* border: 1px solid yellow; */
   width: 40px;
   height: 40px;
 }
