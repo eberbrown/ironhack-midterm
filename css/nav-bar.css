@@ -42,6 +42,7 @@
 
 .nav-burger-menu {
   margin-right: 30px;
+  cursor: pointer;
 }
 
 .nav-burger-menu img {
@@ -57,7 +58,6 @@
   position: absolute;
   height: 85vh;
   margin-top: 100px;
-  background-color: #F2F4FC;
   background-color: #072ac8;
   opacity: 0.96;
 }
@@ -80,7 +80,6 @@
   text-decoration: none;
   font-size: 2.5rem;
   font-weight: 500;
-  color: #072ac8;
   color: #F2F4FC;
   letter-spacing: 0.7px;
 }
